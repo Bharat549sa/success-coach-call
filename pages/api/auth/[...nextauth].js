@@ -15,6 +15,7 @@ export default NextAuth({
   pages: {
     signIn: "/signin",
   },
+  secret: process.env.SECRET,
   adapter: FirestoreAdapter({
     apiKey: "AIzaSyBLOD-YjzMIzjOZZbp3vBsi75M9EOnAZZU",
     authDomain: "test-call-6068d.firebaseapp.com",
